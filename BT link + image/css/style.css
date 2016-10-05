@@ -1,0 +1,9 @@
+img {
+	max-height: 300px;
+	max-width:  300px;
+}
+
+img .ctsp{
+	max-height: 500px;
+	max-width:  500px;
+}
