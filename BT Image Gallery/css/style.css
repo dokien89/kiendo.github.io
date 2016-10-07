@@ -1,0 +1,54 @@
+div{
+	display:block;
+	}
+#box{
+	margin-top: 50px;
+}
+#box img:hover{
+border: 1px solid yellow;
+}
+
+.wrap{
+	max-width:1000px;
+	margin:auto;
+	display:block;
+	height: 3000px;	
+}
+
+#menu ul{
+list-style-type:none;
+padding:0px;
+margin:0px;
+}
+
+#menu ul li{
+display:inline;
+}
+
+#menu ul a{
+text-decoration:none;
+width:129px;
+float:left;
+background:#000;
+color:#fff;
+font-weight:bold;
+text-align:center;
+line-height:35px;
+border-left:1px solid #fff;
+}
+.sp{
+	width:30%;
+	float:left;
+	border: 5px solid #CFC;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+*{
+	box-sizing: border-box;
+}
+a:hover{
+	color: blue;
+}
+h2{
+	color:#00F;
+}
