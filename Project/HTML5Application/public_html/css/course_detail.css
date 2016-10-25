@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 25, 2016, 9:59:30 AM
+    Author     : DO KIEN
+*/
+
+.course-description ul li {
+    list-style-type: square;
+    list-style-position: inside;
+}
+div.course-description{
+/*    display: none;*/
+padding: 0px 22px;
+}
+div.modal-body{
+    font-size: 20px;
+}
+div.modal-dialog{
+    width: 650px;
+}
+.card a{
+    font-size: 25px;
+    text-decoration: none;
+}

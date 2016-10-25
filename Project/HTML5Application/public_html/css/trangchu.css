@@ -135,17 +135,15 @@ button.navbar-toggle{
     text-decoration: none;
 
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.8em;
 }
 .courseDescription p {
     font-size: 1.85em;
-
     margin-top: 10px;
     margin-bottom: 10px;
     color: #3a464b;
     display: block;
-    margin: 0 30px 10px;
-
+    margin: 0 11px 10px;
 }
 .courseDescription div{
     font-weight: 800;
@@ -339,11 +337,188 @@ footer {
 
     border-radius: 7px;
 }
-
-.container .row .video iframe{
-
+ p.price {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 7px;
+    color: #008c9e;
+    font-size: 20px;
+    line-height: 1;
+}
+/*danh sach khoa hoc*/
+.category_link .button{
+    font-family: effra,sans-serif;
+    font-size: 13px;
+    line-height: 1;
+    padding: 1em;
+    min-width: 40px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 0;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    margin: 5px;
+    background-color: #fff;
+    color: #555;
+    border-top: 1px solid transparent;
+    letter-spacing: 1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.category_link.button.active {
+    background: #00b4cc;
+    color: #fff;
+    font-weight: 700;
+    border-top: 1px solid #03899c;
+    border-bottom: 0 none;
+    transition: all .3s ease;
+}
+.link_courses {
+    background-color: #1ABC9C;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+    color: #fff;
+    background-color: #337ab7;
+}
+
+ul.pagination{
+    font-size: 24px;
+}
+
+/* 
+course details
+*/ 
+
+.block1{
+    background-color: #fff;
+    padding-left: 15px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+    font-family: Tahoma;
+}
+img.courseIcon1 {
+    float: left;
+    overflow: hidden;
+    width: 89px;
+    border-radius: 45px;
+    display: block;
+    margin-right: 35px;
+    margin-top: 15px;
+}
+
+.courseDescription_details{
+    margin-left: 25px;
+    overflow: hidden;
+}
+.courseDescription_details h1 {
+    font-weight: 700;
+    font-size: 2em;
+    color: #000;
+    font-family: Tahoma;
+}
+.courseDescription_details p {
+    font-size: 1.60em;
+    line-height: 1.7;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(58, 70, 75);
+    font-family: Tahoma;
+}
+.btn.btn-success{
+    background-color: #1ABC9C;
+    border-color: #1ABC9C;
+    font-family: Tahoma;
+}
+
+.card-block {
+    max-height: 250px;
+    overflow: auto;
+}
+
+
+
+.lessonTitle {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.lessonsCount {
+    float: left;
+    overflow: hidden;
+}
+.lessonOverview {
+    float: right;
+    overflow: hidden;
+}
+
+.quizIcon {
+    float: left;
+    vertical-align: middle;
+    background: url(../img/sprite.png) no-repeat;
+    width: 20px;
+    height: 25px;
+    background-position: -38px -439px;
+}
+
+.lessonOverview div span {
+    margin-left: 5px;
+    color: #b4bbc2;
+}
+.lessonsCount p, .lessonOverview div span {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.9em;
+}
+
+.lessonOverview .quizzes {
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.lessonsCount p {
+    color: #3a464b;
+}
+.lessonsCount p span {
+    color: #1fbba6;
+}
+div.moduleContent.closeModules{
+    font-size: 12px;
+}
+.courseModule {
+    padding: 1px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.courseModule p {
+    font-weight: bold;
+    color: #3a464b;
+    font-size: 1.5em;
+}
+.courseLesson {
+    padding: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #f0f0f0;
+}
+.courseLesson a {
+    color: inherit;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+}
+.lessonLeft {
+    float: left;
+    overflow: hidden;
+}
+.lessonNumber, .courseLessonTitle {
+    font-weight: 500;
+    font-size: 1.4em;
+}
 
 /* Hide the carousel text when the screen is less than 600 pixels wide */
 @media (max-width: 760px) {
@@ -376,21 +551,21 @@ footer {
 }
 @media (min-width: 600px) and (max-width: 1200px){
     .courseItem {
-    float: none;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-#myNavbar ul li a {
+        float: none;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #myNavbar ul li a {
         font-size: 1.8em;
         color:#C30;
         padding: 10px;
         display: inline-block;
         white-space: nowrap;
     }
-.navbar-header img.img-responsive{
-         margin-left: 0px;
-}
+    .navbar-header img.img-responsive{
+        margin-left: 0px;
+    }
 }
 
 
@@ -400,15 +575,15 @@ footer {
         margin-left: -600px;
     }
     .navbar.header, .container{
-        
+
     }
     .containers.header-wrapper{
         background: linear-gradient(to bottom, #f6f6f6 0%,#ffffff 100%);
     }
     .navbar.header {
-    width: 1170px;
-    margin: auto;
-}
+        width: 1170px;
+        margin: auto;
+    }
     .courseItem{
         width: 30%;
         margin-right: 36px;
@@ -421,7 +596,10 @@ footer {
         white-space: nowrap;
     }
     .navbar-header img.img-responsive {
-    margin-left: 0px;
-}
+        margin-left: 0px;
+    }
+    ul.nav.nav-pills{
+        margin-left: 439px;
+    }
 }
 

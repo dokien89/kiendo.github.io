@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Marketing</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/trangchu.css">
+        <link rel="stylesheet" href="css/NavBarBreakpointBT.css">
+        <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/img_hover.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">    
+        <script src="js/custombox.js"></script>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/course_detail.css">  
+        <script>
+
+        </script>
+    </head>
+
+    <body>
+        <div class="containers header-wrapper">
+            <nav class="navbar navbar-inverse header">
+                <div class="container-fluid">
+                    <span class="phone">
+                        <a href="tel:0902209011"><i class="fa fa-phone" aria-hidden="true"></i> 090.220.9011 </a>
+                    </span>
+                    <span class="mail">
+                        <a href="mailto:cuong@techmaster.vn"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            cuong@techmaster.vn</a>
+                    </span>
+                    <span class="header-socials">
+                        <a href="#"><img src="img/fb.png"/></a>
+                        <a href="#"><img src="img/youtube_icon.jpg"/></a>
+                    </span>
+                    <span id="login">
+                        <button class="btn btn-primary login_modal" data-toggle="modal" data-target="#myModal">
+                            Login modal</button>
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                            &times;</button>
+                                        <h4 class="modal-title" id="myModalLabel">
+                                            Login/Registration </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                                                <!-- Nav tabs -->
+                                                <ul class="nav nav-tabs">
+                                                    <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                                                    <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                                                </ul>
+                                                <!-- Tab panes -->
+                                                <div class="tab-content">
+                                                    <div class="tab-pane active" id="Login">
+                                                        <form role="form" class="form-horizontal">
+                                                            <div class="form-group">
+                                                                <label for="email" class="col-sm-2 control-label">
+                                                                    Email</label>
+                                                                <div class="col-sm-10">
+                                                                    <input type="email" class="form-control" id="email1" placeholder="Email" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="exampleInputPassword1" class="col-sm-2 control-label">
+                                                                    Password</label>
+                                                                <div class="col-sm-10">
+                                                                    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-2">
+                                                                </div>
+                                                                <div class="col-sm-10">
+                                                                    <button type="submit" class="btn btn-primary btn-sm">
+                                                                        Submit</button>
+                                                                    <a href="javascript:;">Forgot your password?</a>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="tab-pane" id="Registration">
+                                                        <form role="form" class="form-horizontal">
+                                                            <div class="form-group">
+                                                                <label for="email" class="col-sm-2 control-label">
+                                                                    Name</label>
+                                                                <div class="col-sm-10">
+                                                                    <div class="row">
+                                                                        <div class="col-md-3">
+                                                                            <select class="form-control">
+                                                                                <option>Mr.</option>
+                                                                                <option>Ms.</option>
+                                                                                <option>Mrs.</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-md-9">
+                                                                            <input type="text" class="form-control" placeholder="Name" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="email" class="col-sm-2 control-label">
+                                                                    Email</label>
+                                                                <div class="col-sm-10">
+                                                                    <input type="email" class="form-control" id="email" placeholder="Email" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="mobile" class="col-sm-2 control-label">
+                                                                    Mobile</label>
+                                                                <div class="col-sm-10">
+                                                                    <input type="email" class="form-control" id="mobile" placeholder="Mobile" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="password" class="col-sm-2 control-label">
+                                                                    Password</label>
+                                                                <div class="col-sm-10">
+                                                                    <input type="password" class="form-control" id="password" placeholder="Password" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-2">
+                                                                </div>
+                                                                <div class="col-sm-10">
+                                                                    <button type="button" class="btn btn-primary btn-sm">
+                                                                        Save & Continue</button>
+                                                                    <button type="button" class="btn btn-default btn-sm">
+                                                                        Cancel</button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div id="OR" class="hidden-xs">
+                                                    OR</div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row text-center sign-with">
+                                                    <div class="col-md-12">
+                                                        <h3>
+                                                            Sign in with</h3>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="btn-group btn-group-justified">
+                                                            <a href="#" class="btn btn-primary">Facebook</a> <a href="#" class="btn btn-danger">
+                                                                Google</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="hoc_online .html"><img class="img-responsive" src="img/logo2.png"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+
+                            <li id="courses">
+                                <a href="/Courses/">khóa học</a>
+                            </li>
+                            <li id="courses">
+                                <a href="/Courses/">thực tập</a>
+                            </li>
+
+                            <li id="discuss">
+                                <a href="/Discuss/">việc làm</a>
+                            </li>
+                            <li id="blogPage">
+                                <a href="/Blog/">ebooks</a>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">chúng tôi<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">khách hàng - Đối tác</a></li>
+                                    <li><a href="#">giảng viên</a></li>
+                                    <li><a href="#">thiết bị đào tạo</a></li>
+                                    <li><a href="#">quy định chung</a></li>
+                                    <li><a href="#">tuyển dụng giảng viên</a></li>
+                                    <li><a href="#">chơi thể thao</a></li>
+                                    <li><a href="#">thực tập</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div><br/>
+        <div class="container">
+            <div class="row content">
+                <div class="col-sm-9">
+                    <div class="courseOverview block1">
+                        <img src="img/1051.png" alt="C++ Tutorial" class="courseIcon1">
+                        <div class="courseDescription_details">
+                            <h1>C++ Tutorial</h1>
+                            <p>No prior programming experience is necessary! Our C++ app will supply you with everything you need to create and compile your own programs.</p>
+                            <p>We guarantee that learning with SoloLearn is fast, effective, and fun. This app will show you how easy it is to become a programmer.</p>
+                            <p>Learn C++ includes over 80 lessons that cover&nbsp;<strong>basic concepts, data types, arrays, pointers, conditional statements, loops, functions, classes,</strong> and <strong>objects</strong>. Unlock new levels, take quizzes, collect points, and compete with peers from around the world.</p>
+                            <p>Most importantly, learn while having fun, because being engaged when learning makes all difference in the world.</p>
+                        </div>
+                    </div>
+                    <div id="learn_registration">
+                        <button type="button" id="btn-register" class="btn btn-success btn-primary btn-lg"
+                                data-toggle="modal">Đăng ký học</button>
+                    </div>
+                    <!--Modal dang ky1-->
+                    <div class="modal fade" id="register">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title">1.Chọn gói học phù hợp</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="accordion" role="tablist" aria-multiselectable="true">
+
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingOne">
+                                                <h5 class="mb-0">
+                                                    <input type="radio" name="packs" value="save" id="save" checked>
+                                                    <a class="collapsed"  data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne">
+                                                        Tiết kiệm - 700.000 đ 
+                                                    </a><br/>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseOne" class="" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="card-block">
+                                                    <div class="course-description" id="sav"><p>Phù hợp với học viên ở xa, đã có kinh nghiệm lập trình, có khả năng chủ động học cao.<br>
+                                                            <br>
+                                                            Học viên có đầy đủ code để dùng ngay vào dự án. Có thể hỏi đáp trong bài.</p>
+
+                                                        <ul>
+
+                                                            <li>Xem video</li>
+
+                                                            <li>Trắc nghiệm</li>
+
+                                                            <li>Thảo luận trực tiếp trong bài</li>
+
+                                                            <li>Tham gia nhóm thảo luận Facebook</li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingTwo">
+                                                <h5 class="mb-0">
+                                                    <input type="radio" name="packs" value="standard" id="standard"/><a data-parent="#accordion" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Tiêu chuẩn - 1.500.000 đ
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseTwo" class="" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="card-block">
+                                                    <div class="course-description" id="sta"><p>Học viên muốn trao đổi với giảng viên, được giảng viên chấm bài tập trong vòng 12 tiếng sau khi nộp bài.
+                                                            <br>
+                                                            Khi gặp khó khăn, học viên có thể mang máy đến Techmaster để được hỗ trợ. Một tuần 2 buổi, mỗi buổi 20 phút.
+                                                            <br>
+                                                            Techmaster đảm bảo việc làm cho học viên làm đầy đủ bài tập và làm sản phẩm.</p>
+
+                                                        <ul>
+
+                                                            <li>Xem video</li>
+
+                                                            <li>Trắc nghiệm</li>
+
+                                                            <li>Thảo luận trực tiếp trong bài</li>
+
+                                                            <li>Tham gia nhóm thảo luận Facebook</li>
+
+                                                            <li>Được giảng viên chấm bài</li>
+
+                                                            <li>Hỗ trợ trực tuyến qua Facebook, Skype hoặc Teamviewer</li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingThree">
+                                                <h5 class="mb-0">
+                                                    <input type="radio" name="packs" value="training" id="training"/><a data-parent="#accordion" aria-expanded="false" aria-controls="collapseThree">
+                                                        Thực tập - 2.500.000 đ/Tháng
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseThree" class="" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="card-block">
+                                                    <div class="course-description" id="tra"><p>Học viên thực tập toàn thời gian từ thứ 2 đến thứ 7. Được đội lập trình hướng dẫn và tham gia dự án.</p>
+
+                                                        <p>Học phí đóng 3 tháng một lần. Học phí mỗi tháng 2 triệu VND.<br style="line-height: 25.6px;">
+                                                            Học phí học thử là 500,000 VND cho 7 ngày.<br style="line-height: 25.6px;">
+                                                            Giảng viên + trợ giảng hỗ trợ hàng ngày.<br style="line-height: 25.6px;">
+                                                            Techmaster cam kết giới thiệu việc làm cho học viên thực tập bởi chúng tôi kiểm soát chặt chẽ nhất chất lượng đào tạo.</p>
+
+                                                        <ul>
+
+                                                            <li>Xem video</li>
+
+                                                            <li>Trắc nghiệm</li>
+
+                                                            <li>Thảo luận trực tiếp trong bài</li>
+
+                                                            <li>Tham gia nhóm thảo luận Facebook</li>
+
+                                                            <li>Được giảng viên chấm bài</li>
+
+                                                            <li>Hỗ trợ trực tiếp</li>
+
+                                                            <li>Thực tập trực tiếp tại Techmaster</li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+                                    <button type="button" class="btn btn-primary" data-target="#payment" data-toggle="modal">Tiếp tục</button>
+                                </div>
+
+                            </div><!-- /.modal-content -->
+                        </div>
+
+                        <!-- /.modal-dialog -->
+
+
+                    </div><!-- /.modal -->
+                    <!--Modal dang ky2-->
+                    <div class="modal fade" id="payment">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title">2.Chọn phương thức thanh toán</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingOne">
+                                                <input type="radio" name="pack" value="ck" id="ck" checked/> Thanh toán bằng chuyển khoản
+                                            </div>
+                                            <div id="collapseOne" class="" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="card-block">
+                                                    <div class="course-description2" id="content_ck">
+                                                        <p>
+                                                            Các bạn có thể chuyển khoản ngân hàng để đóng học phí. Khi chuyển khoản, lưu ý đóng đúng mức học phí.<br/>
+
+                                                            Tên Tài Khoản NH: Công ty TNHH Techmaster Việt Nam<br/>
+
+                                                            Số Tài Khoản NH: 002 1000 252 385 (TK Đồng Việt Nam)<br/>
+
+                                                            Ngân hàng: Vietcombank, Chi nhánh Hà Nội <br/>
+
+                                                            Nội dung chuyển khoản chỉ cần ghi kèm số điện thoại của bạn.<br/>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingTwo">
+                                                <input type="radio" name="pack" value="techmaster" id="techmaster"/> Thanh toán tại Techmaster
+                                            </div>
+                                            <div id="collapseTwo" class="" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="card-block">
+                                                    <div class="course-description2" id="tec">
+                                                        <p>
+                                                            Để đóng học phí trực tiếp, bạn vui lòng đến địa chỉ:<br/>
+
+                                                            Số 14, ngõ 4, Nguyễn Đình Chiểu, quận Hai Bà Trưng, Hà nội, Việt Nam.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingThree">
+                                                <input type="radio" name="pack" value="home" id="home" /> Thanh toán tại nhà
+                                            </div>
+                                            <div id="collapseThree" class="" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="card-block">
+                                                    <div class="course-description2" id="home">
+                                                        <fieldset>
+                                                            <legend class="text-center">Contact us</legend>
+
+                                                            <!-- Name input-->
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label" for="name">Họ và tên</label>
+                                                                <div class="col-md-9">
+                                                                    <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Email input-->
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label" for="email">Số điện thoại</label>
+                                                                <div class="col-md-9">
+                                                                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Message body -->
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label" for="email">Địa chỉ</label>
+                                                                <div class="col-md-9">
+                                                                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Form actions -->
+                                                          
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+                    <!--Modal dang ky3-->
+                    <div class="modal fade">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>One fine body&hellip;</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <div class="courseLessons block1">
+                        <div class="lessonTitle">
+                            <div class="lessonsCount">
+                                <p>Lessons: <span>38</span></p>
+                            </div>
+                            <div class="lessonOverview">
+                                <div class="quizzes">
+                                    <div class="quizIcon"></div>
+                                    <span>119 Quizzes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lessonsContent">
+                            <div class="moduleContent closeModules">
+                                <div class="courseModule">
+                                    <p><span>Module 1:</span> Overview</p>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 1 </span>
+                                            <span class="courseLessonTitle"> What is HTML? </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 2 </span>
+                                            <span class="courseLessonTitle"> Basic HTML Document Structure </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 3 </span>
+                                            <span class="courseLessonTitle"> Creating Your First HTML Page </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 4 </span>
+                                            <span class="courseLessonTitle"> Module 1 Quiz </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseModule">
+                                    <p><span>Module 2:</span> HTML Basics</p>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 5 </span>
+                                            <span class="courseLessonTitle"> Paragraphs </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 6 </span>
+                                            <span class="courseLessonTitle"> Text Formatting </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 7 </span>
+                                            <span class="courseLessonTitle"> Headings, Lines, Comments </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 8 </span>
+                                            <span class="courseLessonTitle"> Elements </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 9 </span>
+                                            <span class="courseLessonTitle"> Attributes </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 10 </span>
+                                            <span class="courseLessonTitle"> Images </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 11 </span>
+                                            <span class="courseLessonTitle"> Links </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 12 </span>
+                                            <span class="courseLessonTitle"> Lists </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 13 </span>
+                                            <span class="courseLessonTitle"> Tables </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 14 </span>
+                                            <span class="courseLessonTitle"> Inline and Block Elements </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 15 </span>
+                                            <span class="courseLessonTitle"> Forms </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 16 </span>
+                                            <span class="courseLessonTitle"> HTML Colors </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 17 </span>
+                                            <span class="courseLessonTitle"> Frames </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 18 </span>
+                                            <span class="courseLessonTitle"> Module 2 Quiz </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseModule">
+                                    <p><span>Module 3:</span> Challenges</p>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 19 </span>
+                                            <span class="courseLessonTitle"> Challenge 1 </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseModule">
+                                    <p><span>Module 4:</span> HTML5</p>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 20 </span>
+                                            <span class="courseLessonTitle"> Introduction to HTML5 </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 21 </span>
+                                            <span class="courseLessonTitle"> Content Models </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 22 </span>
+                                            <span class="courseLessonTitle"> HTML5 Page Structure </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 23 </span>
+                                            <span class="courseLessonTitle"> header, nav &amp; footer </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 24 </span>
+                                            <span class="courseLessonTitle"> article, section &amp; aside </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 25 </span>
+                                            <span class="courseLessonTitle"> The audio Element </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 26 </span>
+                                            <span class="courseLessonTitle"> The video Element </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 27 </span>
+                                            <span class="courseLessonTitle"> The progress Element </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 28 </span>
+                                            <span class="courseLessonTitle"> Web Storage API </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 29 </span>
+                                            <span class="courseLessonTitle"> Geolocation API </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 30 </span>
+                                            <span class="courseLessonTitle"> Drag&amp;Drop API </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 31 </span>
+                                            <span class="courseLessonTitle"> SVG </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 32 </span>
+                                            <span class="courseLessonTitle"> SVG Animations &amp; Paths </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 33 </span>
+                                            <span class="courseLessonTitle"> Canvas </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 34 </span>
+                                            <span class="courseLessonTitle"> SVG vs. Canvas </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 35 </span>
+                                            <span class="courseLessonTitle"> Canvas Transformations </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 36 </span>
+                                            <span class="courseLessonTitle"> HTML5 Forms, Part 1 </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 37 </span>
+                                            <span class="courseLessonTitle"> HTML5 Forms, Part 2 </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="courseLesson">
+                                    <a href="/Play/HTML">
+                                        <div class="lessonLeft">
+                                            <span class="lessonNumber"> 38 </span>
+                                            <span class="courseLessonTitle"> Module Quiz </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-3">
+                    <ul class="collection with-header z-depth-1-half all-course">
+                        <li class="collection-header"><h5>Các khóa học liên quan</h5></li>
+
+
+                        <a href="/khoa-hoc/25469/lap-trinh-c-co-ban">
+                            <li class="collection-item avatar">
+
+                                <img src="/fileman/Uploads/logo/CPP.jpg" alt="/fileman/Uploads/logo/CPP.jpg" class="circle">
+
+                                <span class="title">C++ cơ bản qua ví dụ</span>
+
+                                <p class="price">600,000 đ</p>
+
+                            </li>
+                        </a>
+
+                        <a href="/khoa-hoc/25532/scratch-cho-thieu-nhi">
+                            <li class="collection-item avatar">
+
+                                <img src="/fileman/Uploads/logo/Scratch.jpg" alt="/fileman/Uploads/logo/Scratch.jpg" class="circle">
+
+                                <span class="title">Lập trình Scratch</span>
+
+                                <p class="price">700,000 đ</p>
+
+                            </li>
+                        </a>
+
+                        <a href="/khoa-hoc/25484/tro-thanh-giang-vien-gioi">
+                            <li class="collection-item avatar">
+
+                                <img src="/fileman/Uploads/no-image-course.jpg" alt="/fileman/Uploads/no-image-course.jpg" class="circle">
+
+                                <span class="title">Ai cũng có thể trở thành giảng viên giỏi nếu</span>
+
+                                <p class="price">800,000 đ</p>
+
+                            </li>
+                        </a>
+
+                        <a href="/khoa-hoc/25480/lap-trinh-web-nodejs-toc-do-cao">
+                            <li class="collection-item avatar">
+
+                                <img src="/fileman/Uploads/logo/nodejs.jpg" alt="/fileman/Uploads/logo/nodejs.jpg" class="circle">
+
+                                <span class="title">Node.js xây dựng web site tốc độ cao</span>
+
+                                <p class="price">1,500,000 đ</p>
+
+                            </li>
+                        </a>
+
+                        <a href="/khoa-hoc/25485/lap-trinh-python-ung-dung-thuc-te">
+                            <li class="collection-item avatar">
+
+                                <img src="/fileman/Uploads/Python/python_course.jpg" alt="/fileman/Uploads/Python/python_course.jpg" class="circle">
+
+                                <span class="title">Lập trình Python ứng dụng thực tế</span>
+
+                                <p class="price">1,000,000 đ</p>
+
+                            </li>
+                        </a>
+
+                        <a href="/khoa-hoc/25523/lap-trinh-robot">
+                            <li class="collection-item avatar">
+
+                                <img src="/fileman/Uploads/Robot/RobotSoccer.jpg" alt="/fileman/Uploads/Robot/RobotSoccer.jpg" class="circle">
+
+                                <span class="title">ĐỘI BÓNG ROBOT</span>
+
+                                <p class="price">2,900,000 đ</p>
+
+                            </li>
+                        </a>
+
+                        <a href="/khoa-hoc/8217/lap-trinh-ios-swift">
+                            <li class="collection-item avatar">
+
+                                <img src="/fileman/Uploads/IOS/Swift.jpg" alt="/fileman/Uploads/IOS/Swift.jpg" class="circle">
+
+                                <span class="title">Lập trình iOS Swift</span>
+
+                                <p class="price">1,800,000 đ</p>
+
+                            </li>
+                        </a>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer id="footer" >
+
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class=" clearfix">
+                            <a href="/index.html"> <strong class="logo"><h4>Techmaster. </h4></strong></a>
+                        </div>
+                        <div class="nav nav-pills add-nav">
+                            <p><a href="https://techmaster.vn/trungtam/quy-dinh">Quy định </a></p>
+                        </div>
+                        <ul class="list-inline social-links">
+                            <li><a class="facebook" href="https://www.facebook.com/techmastervn/?fref=ts" target="_blank"><i class="fa fa-facebook  fa-2x" aria-hidden="true"></i>
+                                </a></li>
+                            <li><a class="youtube" href="https://www.youtube.com/user/TechMasterVN" target="_blank"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+                                </a></li>
+                            <li><a class="github" href="https://github.com/arrowjs" target="_blank"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>Về chúng tôi</h4>
+                        <ul class="list-unstyled nav-list">
+                            <li><a href="" class="jobs">Việc làm</a></li>
+                            <li><a href="https://techmaster.vn/trungtam/Trung-tam">Về chúng tôi</a></li>
+                            <li><a href="https://techmaster.vn/trungtam/giang-vien">Giảng viên</a></li>
+                            <li><a href="https://techmaster.vn/trungtam/quy-dinh">Cơ sở vật chất</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>Contact</h4>
+                        <ul class="list-unstyled nav-list">
+                            <li><a href="tel:0902209011">Mr Cường : 090.220.9011</a></li>
+                            <li><a href="tel:0964407993">Mr Nghĩa : 096.440.7993</a></li>
+                            <li><a href="mailto:cuong@techmaster.vn">cuong@techmaster.vn</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>Địa chỉ
+                        </h4>
+
+                        <div class="chat-block">
+                            <div>
+                                <a href="https://techmaster.vn/trungtam/dia-chi#co-so-1">
+                                    <address> Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</address>
+                                    <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://techmaster.vn/trungtam/dia-chi#co-so-2">
+                                    <address> Phòng 2304, tầng 23, toà nhà StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh
+                                        Xuân, Hà Nội
+                                    </address>
+                                    <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </footer>
+    </body>
+</html>
