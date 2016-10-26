@@ -6,11 +6,13 @@
     -webkit-tap-highlight-color: none;
     -webkit-tap-highlight-color: transparent;
 }
+
+
 body {
     position: relative;
     font-size: 10px;
     background-color: #f2f2f2;
-    font-family: GothamRounded;
+    font-family: Arial;
 }
 p {
     -webkit-margin-before: 1em;
@@ -34,40 +36,52 @@ p {
     border: 1px solid rosybrown;
 }
 */
+h3#khnb{
+    color: #1ABC9C;
+    font-size: 30px;
+    text-transform: uppercase;
+}
 .header-socials img{
     width: 25px;
     height: 25px;
     border-radius: 4px;
 }
-.navbar-header{
-
-
-}
+.containers.header-wrapper{
+        background-image: url("../img/bg_1.jpg");
+            background-color: white;
+    }
 .navbar-inverse{
     border:none;
+    background:none;
 }
+
 .navbar-inverse .navbar-toggle {
     margin-left: 14px;
-    border-color: #333;
-    background: black;
+    border-color: #1ABC9C;
+    background: #1ABC9C;
 }
 .navbar-inverse .navbar-collapse
 {
     border:none;
 }
 .navbar.header {
-    background: linear-gradient(to bottom, #f6f6f6 0%,#ffffff 100%);
     border-radius: 0;
 }
 .navbar.header a{
     font-size:18px;
+    color: #FFFFFF;
 }
 .navbar-header img.img-responsive{
     margin-left: 98px;  
 }
+.btn-primary {
+    background-color: #1ABC9C;
+    border-color: #1ABC9C;
+}
 button.btn.btn-primary.login_modal{
     margin-right: -53px;
 }
+
 button.navbar-toggle{
     float: left;
 }
@@ -88,6 +102,8 @@ button.navbar-toggle{
     margin-bottom: 25px;
 }
 /*course*/
+
+
 
 .homeCourseContent {
     margin-bottom: 25px;
@@ -122,8 +138,6 @@ button.navbar-toggle{
     margin-bottom: 10px;
 }
 .courseStores a{
-
-
     width: auto;
     padding: 10px 20px;
     background-color: #1abc9c;
@@ -131,9 +145,7 @@ button.navbar-toggle{
     border-radius: 20px;
     color: #fff;
     display: inline-block;
-
     text-decoration: none;
-
     text-align: center;
     font-size: 1.8em;
 }
@@ -151,7 +163,6 @@ button.navbar-toggle{
     margin-top: 5px;
     margin-bottom: 5px;
     color: #000;
-    font-family: GothamRounded;
 }
 .viewAll {
     color: #1abc9c;
@@ -337,7 +348,7 @@ footer {
 
     border-radius: 7px;
 }
- p.price {
+p.price {
     text-align: center;
     margin-bottom: 0;
     margin-top: 7px;
@@ -345,9 +356,12 @@ footer {
     font-size: 20px;
     line-height: 1;
 }
+ .navbar-inverse .navbar-toggle:hover {
+    background-color: #1ABC9C;
+    border-color: #1ABC9C;
+}
 /*danh sach khoa hoc*/
 .category_link .button{
-    font-family: effra,sans-serif;
     font-size: 13px;
     line-height: 1;
     padding: 1em;
@@ -377,14 +391,14 @@ footer {
 }
 .link_courses {
     background-color: #1ABC9C;
-    margin-top: 5px;
+    margin-top: 0px;
     margin-bottom: 10px;
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+/*.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
     color: #fff;
     background-color: #337ab7;
-}
+}*/
 
 ul.pagination{
     font-size: 24px;
@@ -400,7 +414,6 @@ course details
     padding-right: 10px;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
-    font-family: Tahoma;
 }
 img.courseIcon1 {
     float: left;
@@ -415,12 +428,12 @@ img.courseIcon1 {
 .courseDescription_details{
     margin-left: 25px;
     overflow: hidden;
+    padding-right: 15px;
 }
 .courseDescription_details h1 {
     font-weight: 700;
     font-size: 2em;
     color: #000;
-    font-family: Tahoma;
 }
 .courseDescription_details p {
     font-size: 1.60em;
@@ -428,24 +441,26 @@ img.courseIcon1 {
     margin-top: 10px;
     margin-bottom: 10px;
     color: rgb(58, 70, 75);
-    font-family: Tahoma;
 }
-.btn.btn-success{
+#btn-register{
     background-color: #1ABC9C;
     border-color: #1ABC9C;
-    font-family: Tahoma;
+        display: inherit;
+    margin: auto;
 }
 
 .card-block {
-    max-height: 250px;
+    max-height: 200px;
     overflow: auto;
 }
 
 
 
-.lessonTitle {
+div.lessonTitle {
     overflow: hidden;
     margin-bottom: 15px;
+    font-size: 13px;
+    padding-top: 15px;
 }
 .lessonsCount {
     float: left;
@@ -462,7 +477,7 @@ img.courseIcon1 {
     background: url(../img/sprite.png) no-repeat;
     width: 20px;
     height: 25px;
-    background-position: -38px -439px;
+    background-position: -40px -437px
 }
 
 .lessonOverview div span {
@@ -521,6 +536,11 @@ div.moduleContent.closeModules{
 }
 
 /* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (min-width: 900px){
+    .col-xs-12.review-item{
+        width: 33.33%;
+    }
+}
 @media (max-width: 760px) {
     #myCarousel{
         display:none;
@@ -533,7 +553,7 @@ div.moduleContent.closeModules{
     }
     #myNavbar >.nav {
         margin-left: -15px;
-        background-color:black;
+        background-color:#1ABC9C;
         width: 180px;
     }
     .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle {
@@ -547,6 +567,8 @@ div.moduleContent.closeModules{
     }
     #myNavbar ul li a {
         color: white;
+        font-size: 22px;
+        text-transform: capitalize;
     }
 }
 @media (min-width: 600px) and (max-width: 1200px){
@@ -558,7 +580,7 @@ div.moduleContent.closeModules{
     }
     #myNavbar ul li a {
         font-size: 1.8em;
-        color:#C30;
+        color:#FFFFFF;
         padding: 10px;
         display: inline-block;
         white-space: nowrap;
@@ -577,9 +599,7 @@ div.moduleContent.closeModules{
     .navbar.header, .container{
 
     }
-    .containers.header-wrapper{
-        background: linear-gradient(to bottom, #f6f6f6 0%,#ffffff 100%);
-    }
+    
     .navbar.header {
         width: 1170px;
         margin: auto;
@@ -589,9 +609,10 @@ div.moduleContent.closeModules{
         margin-right: 36px;
     }
     #myNavbar ul li a {
-        font-size: 1.8em;
-        color:#00F;
+        font-size: 22px;
+        color:#FFFFFF;
         padding: 10px;
+        text-transform: uppercase;
         display: inline-block;
         white-space: nowrap;
     }

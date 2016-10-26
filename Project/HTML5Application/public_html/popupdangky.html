@@ -1,56 +1,261 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
 
-<div class="container">
-  <h2>Accordion Example</h2>
-  <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">1.Chọn gói học phù hợp</a>
-        </h4>
+        <div class="container">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">1.Chọn gói học phù hợp</a>
+                        </h4>
+                        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
       </div>
-      <div id="collapse1" class="panel-collapse collapse in">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
-        </h4>
-      </div>
-      <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
-        </h4>
-      </div>
-      <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      </div>
-    </div>
-  </div>
-</div>
-    
-</body>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div class="modal-body">
+                                <div id="accordion" role="tablist" aria-multiselectable="true">
+
+                                    <div class="card">
+                                        <div class="card-header" role="tab" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <input type="radio" name="packs" value="save" id="save" checked>
+                                                <a class="collapsed"  data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne">
+                                                    Tiết kiệm - 700.000 đ 
+                                                </a><br/>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="card-block">
+                                                <div class="course-description" id="sav"><p>Phù hợp với học viên ở xa, đã có kinh nghiệm lập trình, có khả năng chủ động học cao.<br>
+                                                        <br>
+                                                        Học viên có đầy đủ code để dùng ngay vào dự án. Có thể hỏi đáp trong bài.</p>
+
+                                                    <ul>
+
+                                                        <li>Xem video</li>
+
+                                                        <li>Trắc nghiệm</li>
+
+                                                        <li>Thảo luận trực tiếp trong bài</li>
+
+                                                        <li>Tham gia nhóm thảo luận Facebook</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" role="tab" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <input type="radio" name="packs" value="standard" id="standard"/><a data-parent="#accordion" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Tiêu chuẩn - 1.500.000 đ
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="card-block">
+                                                <div class="course-description" id="sta"><p>Học viên muốn trao đổi với giảng viên, được giảng viên chấm bài tập trong vòng 12 tiếng sau khi nộp bài.
+                                                        <br>
+                                                        Khi gặp khó khăn, học viên có thể mang máy đến Techmaster để được hỗ trợ. Một tuần 2 buổi, mỗi buổi 20 phút.
+                                                        <br>
+                                                        Techmaster đảm bảo việc làm cho học viên làm đầy đủ bài tập và làm sản phẩm.</p>
+
+                                                    <ul>
+
+                                                        <li>Xem video</li>
+
+                                                        <li>Trắc nghiệm</li>
+
+                                                        <li>Thảo luận trực tiếp trong bài</li>
+
+                                                        <li>Tham gia nhóm thảo luận Facebook</li>
+
+                                                        <li>Được giảng viên chấm bài</li>
+
+                                                        <li>Hỗ trợ trực tuyến qua Facebook, Skype hoặc Teamviewer</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" role="tab" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <input type="radio" name="packs" value="training" id="training"/><a data-parent="#accordion" aria-expanded="false" aria-controls="collapseThree">
+                                                    Thực tập - 2.500.000 đ/Tháng
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="card-block">
+                                                <div class="course-description" id="tra"><p>Học viên thực tập toàn thời gian từ thứ 2 đến thứ 7. Được đội lập trình hướng dẫn và tham gia dự án.</p>
+
+                                                    <p>Học phí đóng 3 tháng một lần. Học phí mỗi tháng 2 triệu VND.<br style="line-height: 25.6px;">
+                                                        Học phí học thử là 500,000 VND cho 7 ngày.<br style="line-height: 25.6px;">
+                                                        Giảng viên + trợ giảng hỗ trợ hàng ngày.<br style="line-height: 25.6px;">
+                                                        Techmaster cam kết giới thiệu việc làm cho học viên thực tập bởi chúng tôi kiểm soát chặt chẽ nhất chất lượng đào tạo.</p>
+
+                                                    <ul>
+
+                                                        <li>Xem video</li>
+
+                                                        <li>Trắc nghiệm</li>
+
+                                                        <li>Thảo luận trực tiếp trong bài</li>
+
+                                                        <li>Tham gia nhóm thảo luận Facebook</li>
+
+                                                        <li>Được giảng viên chấm bài</li>
+
+                                                        <li>Hỗ trợ trực tiếp</li>
+
+                                                        <li>Thực tập trực tiếp tại Techmaster</li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+                                    <button type="button" class="btn btn-primary" data-target="#payment" data-toggle="modal">Tiếp tục</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">2.Chọn phương thức thanh toán</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="modal-body">
+                                    <div id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingOne">
+                                                <input type="radio" name="pack" value="ck" id="ck" checked/> Thanh toán bằng chuyển khoản
+                                            </div>
+                                            <div id="collapseOne" class="" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="card-block">
+                                                    <div class="course-description2" id="content_ck">
+                                                        <p>
+                                                            Các bạn có thể chuyển khoản ngân hàng để đóng học phí. Khi chuyển khoản, lưu ý đóng đúng mức học phí.<br/>
+
+                                                            Tên Tài Khoản NH: Công ty TNHH Techmaster Việt Nam<br/>
+
+                                                            Số Tài Khoản NH: 002 1000 252 385 (TK Đồng Việt Nam)<br/>
+
+                                                            Ngân hàng: Vietcombank, Chi nhánh Hà Nội <br/>
+
+                                                            Nội dung chuyển khoản chỉ cần ghi kèm số điện thoại của bạn.<br/>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingTwo">
+                                                <input type="radio" name="pack" value="techmaster" id="techmaster"/> Thanh toán tại Techmaster
+                                            </div>
+                                            <div id="collapseTwo" class="" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="card-block">
+                                                    <div class="course-description2" id="tec">
+                                                        <p>
+                                                            Để đóng học phí trực tiếp, bạn vui lòng đến địa chỉ:<br/>
+
+                                                            Số 14, ngõ 4, Nguyễn Đình Chiểu, quận Hai Bà Trưng, Hà nội, Việt Nam.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingThree">
+                                                <input type="radio" name="pack" value="home" id="home" /> Thanh toán tại nhà
+                                            </div>
+                                            <div id="collapseThree" class="" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="card-block">
+                                                    <div class="course-description2" id="home">
+                                                        <fieldset>
+                                                            <legend class="text-center">Contact us</legend>
+
+                                                            <!-- Name input-->
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label" for="name">Họ và tên</label>
+                                                                <div class="col-md-9">
+                                                                    <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Email input-->
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label" for="email">Số điện thoại</label>
+                                                                <div class="col-md-9">
+                                                                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Message body -->
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label" for="email">Địa chỉ</label>
+                                                                <div class="col-md-9">
+                                                                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Form actions -->
+
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Quay lại</button>
+                                        <button type="button" class="btn btn-primary" data-target="#payment" data-toggle="modal">Tiếp tục</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Xác nhận đăng ký</a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
 

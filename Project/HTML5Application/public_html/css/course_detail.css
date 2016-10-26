@@ -13,16 +13,109 @@ and open the template in the editor.
     list-style-position: inside;
 }
 div.course-description{
-/*    display: none;*/
-padding: 0px 22px;
+    /*    display: none;*/
+    padding: 0px 22px;
 }
 div.modal-body{
     font-size: 20px;
 }
-div.modal-dialog{
-    width: 650px;
-}
+
 .card a{
-    font-size: 25px;
+    font-size: 22px;
     text-decoration: none;
+}
+
+#header1  {
+    height: 0px;
+    border-bottom: none;
+    padding: 0px;
+}
+#header .close{
+    margin-top: 4px;
+}
+.panel-title{
+    font-size: 26px;
+}
+div.modal-footer.footer_c{
+    border-top:none;
+}
+
+#name, #email{
+    display: inherit;
+    margin-bottom: 12px;
+}
+.course-description2 div.form-group{
+    margin-top: 30px;
+}
+
+#collapse2 .card-header{
+    font-size: 22px;
+    color:#337ab7;
+}
+div#learn_registration{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.collection .collection-item.avatar .circle {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    .courseIcon1{
+        width: 65px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .courseDescription2{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        text-align: center;
+    }
+    div.courseDescription_details{
+        clear: both;
+        text-align: center;
+    }
+    img.courseIcon1{
+        float: none;
+        margin: auto;
+    }
+    div.courseOverview.block1{
+        padding-top: 18px;
+        margin-left: -32px;
+        margin-right: -18px;
+    }
+    div.courseLessons.block1{
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    div.col-sm-3.course-relative{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1030px) and (min-width: 650px){
+    .block1{
+        width: 700px;
+    }
+    div.col-sm-3.course-relative{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    div.modal-dialog.course_d{
+        width: 650px;
+    }
 }

@@ -60,24 +60,24 @@ footer {
     .row.content {height:auto;}
 }
 
-.content > .lesson h4{
+/*.content > .lesson h4{
     font-weight: 500;
     font-size: 1.7em;
     color: #000; 
     color: #C30;
-}
+}*/
 @media (min-width: 1200px){
     #wrapper {
         width: 1170px;
         margin: auto;
     }
 }
-.nav > .item{
+/*.nav > .item{
     padding: 10px;
     background-color: #f0f0f0;
     border-radius: 5px;
     font-weight: bold;
-}
+}*/
 .container-fluid .row .lesson{
     
 }

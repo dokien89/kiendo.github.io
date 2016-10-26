@@ -18,14 +18,25 @@ $(document).ready(function () {
         });
         e.preventDefault();
     });
+    
     $("#btn-register").attr("data-target", "#register");
+    
+    $("#cont1").click(function(){
+        $("#collapse1").removeClass("in");
+        $("#collapse2").addClass("in");
+       $(".course-description2").hide();
+       $(".course-description2:first").show();
+    });
+    
     $("#btn-register").click(function () {
+        $("#collapse1").addClass("in");
+        $("#collapse2").removeClass("in");
+        $("#collapse3").removeClass("in");
         $(".course-description").hide();
         $(".course-description:first").show();
     });
     $(".modal-footer .btn-primary").click(function () {
-        $(".course-description2").hide();
-        $(".course-description2:first").show();
+       
     });
     $("input[type='radio']").on("click", function () {
         if ($("input[type='radio']:checked").val()=="save") {
@@ -33,23 +44,48 @@ $(document).ready(function () {
         } else{
             $("#sav").hide();
         }
+        
         if ($("input[type='radio']:checked").val()=="standard") {
             $("#sta").show();
         } else{
             $("#sta").hide();
         }
+        
         if ($("input[type='radio']:checked").val()=="training") {
             $("#tra").show();
         } else{
             $("#tra").hide();
         }
-        if ($("input[type='radio']:checked").val()=="content_ck") {
+        
+       
+//        if ($("input[type='radio']:checked").val()=="techmaster") {
+//            $("#tech").show();
+//        } else{
+//            $("#tech").hide();
+//        }
+//        if ($("input[type='radio']:checked").val()=="home") {
+//            $("#hom").show();
+//        } else{
+//            $("#hom").hide();
+//        }
+    });
+    $("input[name='pay']").on("click", function () {
+         if ($("input[name='pay']:checked").val()=="ck") {
             $("#content_ck").show();
         } else{
             $("#content_ck").hide();
         }
+         if ($("input[name='pay']:checked").val()=="techmaster") {
+            $("#tec").show();
+        } else{
+            $("#tec").hide();
+        }
+        if ($("input[name='pay']:checked").val()=="home") {
+            $("#hom").show();
+        } else{
+            $("#hom").hide();
+        }
     });
-    
     
     
     
