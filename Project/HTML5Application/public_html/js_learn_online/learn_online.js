@@ -8,9 +8,7 @@
 
 
 $(document).ready(function () {
-//    $('.btn_quiz').click(function(){
-//    alert("The paragraph was clicked.");
-//});
+
 
 $("#btn-excer").click(function(){
      window.location.href='codeonline.html';

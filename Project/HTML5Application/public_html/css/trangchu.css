@@ -21,6 +21,7 @@ p {
     -webkit-margin-end: 0px;
 }
 
+
 .header-socials{
     margin-left: 20px;
 }
@@ -67,10 +68,15 @@ h3#khnb{
 .navbar.header {
     border-radius: 0;
 }
-.navbar.header a{
+.navbar.header span > a{
     font-size:18px;
     color: #FFFFFF;
 }
+
+.navbar-inverse .navbar-nav>.open>a:hover{
+    background-color: #286090;
+}
+
 .navbar-header img.img-responsive{
     margin-left: 98px;  
 }

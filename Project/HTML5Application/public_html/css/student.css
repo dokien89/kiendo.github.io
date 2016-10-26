@@ -1,0 +1,290 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 27, 2016, 12:27:06 AM
+    Author     : DO KIEN
+*/
+
+body,html{
+    height: 100%;
+    font-family: arial;
+}
+
+nav.sidebar, .main{
+    -webkit-transition: margin 200ms ease-out;
+    -moz-transition: margin 200ms ease-out;
+    -o-transition: margin 200ms ease-out;
+    transition: margin 200ms ease-out;
+}
+
+.main{
+    padding: 10px 10px 0 10px;
+}
+
+#mycourse {
+    overflow: auto;
+    margin-bottom: 10px;
+    margin: auto;
+    margin-top: 22px;
+}
+
+.courseItem {
+    width: 100%;
+    border: 1px solid #CCC;
+    float: left;
+    margin: auto;
+    overflow: hidden;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 3px rgba(0,0,0,.45);
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+.courseItem a {
+    text-decoration: none;
+    padding: 20px 20px 0;
+}
+
+.courseStores {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.courseIcon {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 89px;
+    border-radius: 45px;
+    display: block;
+}
+.courseDescription{
+    text-align: center;
+}
+.courseDescription div {
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #000;
+}
+.courseDescription p {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #3a464b;
+    display: block;
+    margin: 0 11px 10px;
+}
+#notification-content {
+    background: #fff;
+    padding: 1rem;
+    position: relative;
+    border-radius: 5px;
+    /*margin: 0 .75rem 30px;*/
+}
+ul.list-notification {
+    padding: 0 .75rem;
+    margin-top: 0;
+}
+.notification-item {
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    outline: 0;
+    padding: 7px 0;
+    position: relative;
+}
+.noti-img {
+    display: block;
+    margin-right: 8px;
+    width: 45px;
+    height: 45px;
+        float: left;
+}
+.main-notification {
+    overflow: hidden;
+}
+
+/*newbegin*/
+
+.inputstl { 
+                padding: 9px; 
+                border: solid 1px #0077B0; 
+                outline: 0; 
+                background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #C6ECFF), to(#FFFFFF)); 
+                background: -moz-linear-gradient(top, #FFFFFF, #C6ECFF 1px, #FFFFFF 25px); 
+                box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+                -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+                -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+
+            } 
+            #save{
+                width:50%;
+                margin-left: 98px;
+                background-color: #1ABC9C;
+                color: #FFFFFF;
+                font-size: 18px;
+            }
+            
+            #img_avatar{
+                float:left;
+                border-radius: 50%;
+                display: block;
+                margin-left: 16px;
+                width: 75px;
+            }
+            .image_input{
+                display: inline-block;
+                margin-top: 19px;
+            }
+            #file_input{
+                margin-top: 23px;
+                /* margin-left: 49px; */
+                display: inline-block;
+                margin-left: 12px;
+            }
+            .btn-file {
+                position: relative;
+                overflow: hidden;
+                margin-top: 18px;
+                margin-left: 10px;
+                background-color: #1ABC9C;
+                color: #FFFFFF;
+                font-size: 18px;
+            }
+            .btn-file input[type=file] {
+                position: absolute;
+                top: 0;
+                right: 0;
+                min-width: 100%;
+                min-height: 100%;
+                font-size: 100px;
+                text-align: right;
+                filter: alpha(opacity=0);
+                opacity: 0;
+                outline: none;
+                background: white;
+                cursor: inherit;
+                display: block;
+            }
+            .chinhsua{
+                margin-top: -2px;
+                font-size: 15px;
+            }
+/*new end*/
+
+@media (min-width: 765px) {
+
+    .main{
+        position: absolute;
+        width: calc(100% - 40px); 
+        margin-left: 40px;
+        float: right;
+    }
+
+    nav.sidebar:hover + .main{
+        margin-left: 200px;
+    }
+
+    nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: 0px;
+    }
+
+    nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    nav.sidebar a{
+        padding-right: 13px;
+    }
+
+    nav.sidebar .navbar-nav > li:first-child{
+        border-top: 1px #e5e5e5 solid;
+    }
+
+    nav.sidebar .navbar-nav > li{
+        border-bottom: 1px #e5e5e5 solid;
+    }
+
+    nav.sidebar .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+        padding: 0 0px 0 0px;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: #777;
+    }
+
+    nav.sidebar{
+        width: 200px;
+        height: 100%;
+        margin-left: -160px;
+        float: left;
+        margin-bottom: 0px;
+    }
+
+    nav.sidebar li {
+        width: 100%;
+    }
+
+    nav.sidebar:hover{
+        margin-left: 0px;
+    }
+
+    .forAnimate{
+        opacity: 0;
+    }
+}
+
+@media (min-width: 1330px) {
+
+    .main{
+        width: calc(100% - 200px);
+        margin-left: 200px;
+    }
+
+    nav.sidebar{
+        margin-left: 0px;
+        float: left;
+    }
+
+    nav.sidebar .forAnimate{
+        opacity: 1;
+    }
+}
+
+nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+    color: #CCC;
+    background-color: transparent;
+}
+
+nav:hover .forAnimate{
+    opacity: 1;
+}
+section{
+    padding-left: 15px;
+}
+
+@media (min-width: 1200px){
+    .courseItem {
+        width: 29%;
+        margin-right: 36px;
+    }
+    #content{
+        width: 1100px;
+    }
+}
