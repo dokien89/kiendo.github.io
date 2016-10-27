@@ -320,7 +320,15 @@ ul.nav.navbar-nav.navbar-right{
 .modal_quiz .modal-header{
     background-color: #1ABC9C;
 }
-
+#header nav.navbar.navbar-default{
+    background-color:#1ABC9C;
+    border: none;
+    color:#FFFFFF;
+}
+#header .navbar-header a, #bs-example-navbar-collapse-1 a{
+    color:#FFFFFF;
+    font-size: 18px;
+}
 .modal_quiz .modal-header .modal-title{
     font-size: 22px;
     color: #FFFFFF;
@@ -334,6 +342,18 @@ button#next_quiz{
     color: #FFFFFF;
 }
 div.row.btn-excer{
+
+}
+#tbl_ranking{
+    /*width: 550px;*/
+    margin: auto;
+}
+
+table, tr, th, td {
+    align-content: center;
+    font-size: 16px;
+}
+th{
 
 }
 
@@ -444,7 +464,9 @@ footer {
 .dropdown-menu > li > a >i{
     margin-right: 3px;
 } 
-
+#bs-example-navbar-collapse-1{
+    
+}
 .navbar-nav > li > a
 {
     position: relative;
@@ -485,7 +507,7 @@ footer {
     }
     .col-md-8.all_video{
         margin-bottom: 10px;
-}
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -494,6 +516,9 @@ footer {
         //display:none;
     } 
     */
+    #tbl_ranking{
+    width: 550px;
+    }
     #account_link > div{
         float: right;
     }

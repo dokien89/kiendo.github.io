@@ -66,7 +66,9 @@ div#learn_registration{
     vertical-align: middle;
     border-radius: 50%;
 }
-
+fieldset label{
+    font-size: 15px;
+}
 @media screen and (max-width: 767px) {
     .courseIcon1{
         width: 65px;
