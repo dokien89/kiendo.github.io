@@ -8,6 +8,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/student.css" type="text/css">
+        <script src="js/student_script.js"></script>
         <style>
             /* Remove the navbar's default margin-bottom and rounded borders */
             .navbar {
@@ -30,6 +31,9 @@
                 background-color: #555;
                 color: white;
                 padding: 15px;
+            }
+            #cert img {
+                width: 100%; 
             }
 
             /* On small screens, set height to 'auto' for sidenav and grid */
@@ -83,10 +87,10 @@
                             </div>
                             <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
-                                    <li class="active"><a href="#">Khóa học của tôi<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-book"></span></a></li>
-                                    <li class=""><a href="#">Thông báo<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-bell"></span></a></li>
-                                    <li ><a href="#">Hồ sơ cá nhân<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>        
-                                    <li ><a href="#">Chứng chỉ<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-certificate"></span></a></li>
+                                    <li id="mycourse_li" class="sidebar_link"><a href="#">Khóa học của tôi<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-book"></span></a></li>
+                                    <li id="report_li"   class="sidebar_link "><a href="#">Thông báo<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-bell"></span></a></li>
+                                    <li id="record_li"   class="sidebar_link"><a href="#">Hồ sơ cá nhân<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>        
+                                    <li id="cert_li"     class="sidebar_link"><a href="#">Chứng chỉ<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-certificate"></span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -95,6 +99,7 @@
                 <div class="col-sm-10 text-left">
                     <div class="container" id="content">
                         <div class="row" id ="mycourse">
+                            <h3>Khóa học của bạn</h3>
                             <div class="col-sm-4 courseItem block noPadding sp">
                                 <a href="/Course/CPlusPlus/">
                                     <img class="img-responsive courseIcon" src="img/1051.png" alt="C++ Tutorial">
@@ -130,10 +135,9 @@
                             </div>
                         </div>
 
-                        <div id="notification-content" class="row white z-depth-1">
+                        <div id="report" class="row white z-depth-1">
+                            <h3>Thông báo</h3>
                             <ul class="list-notification">
-
-
                                 <li class="notification-item">
                                     <div class="clearfix">
                                         <div class="notification-img">
@@ -153,7 +157,7 @@
                                 <li class="notification-item">
                                     <div class="clearfix">
                                         <div class="notification-img">
-                                            <img class="noti-img" src="/img/users/4072.png">
+                                            <img class="noti-img img-responsive" src="/img/users/4072.png">
                                         </div>
                                         <div class="notification-text ">
                                             <span class="main-notification">
@@ -310,7 +314,8 @@
 
                             </ul>
                         </div>
-                        <div class="row record">
+                        <div class="row" id="record">
+                            <h3>Hồ sơ</h3>
                             <div class="container">
                                 <form class="form-horizontal" role="form">
                                     <div class="form-group">
@@ -327,8 +332,8 @@
                                         </div>
                                         <div class="col-sm-2">
                                             <label class="btn btn-default btn-file chinhsua">
-                                            Chỉnh sửa <input type="file" style="display: none;">
-                                        </label>
+                                                Chỉnh sửa <input type="file" style="display: none;">
+                                            </label>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -338,8 +343,8 @@
                                         </div>
                                         <div class="col-sm-2">
                                             <label class="btn btn-default btn-file chinhsua">
-                                            Chỉnh sửa <input type="file" style="display: none;">
-                                        </label>
+                                                Chỉnh sửa <input type="file" style="display: none;">
+                                            </label>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -379,6 +384,16 @@
                                     </div>
                                 </form>
                             </div> 
+                        </div>
+                        <!--chung chi-->
+                        <div class="row" id="cert">
+                            <h3>Chứng chỉ của bạn</h3>
+                            <div class="col-sm-4">
+                                <img src="img/certi1.jpg">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="img/certi2.jpg">
+                            </div>
                         </div>
                     </div>
 

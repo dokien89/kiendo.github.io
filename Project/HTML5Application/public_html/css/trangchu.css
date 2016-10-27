@@ -65,6 +65,11 @@ h3#khnb{
 {
     border:none;
 }
+ .navbar-inverse .navbar-nav>.open>a:focus, 
+.navbar-inverse .navbar-nav>.open>a:active{
+    background-color: #1ABC9C;
+}
+
 .navbar.header {
     border-radius: 0;
 }

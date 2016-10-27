@@ -11,7 +11,7 @@ $(document).ready(function () {
 
 
 $("#btn-excer").click(function(){
-     window.location.href='codeonline.html';
+     window.location.href='code-online.html';
 });
     $('.btn_quiz').click(function () {
         $('#question1').show();
