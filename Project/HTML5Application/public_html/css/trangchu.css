@@ -38,9 +38,10 @@ p {
 }
 */
 h3#khnb{
-    color: #1ABC9C;
-    font-size: 30px;
+    color:#FFFFFF;
+    font-size: 25px;
     text-transform: uppercase;
+    text-align: center;
 }
 .header-socials img{
     width: 25px;
@@ -111,6 +112,11 @@ button.navbar-toggle{
 }
 #myCarousel{
     margin-bottom: 25px;
+}
+.highlights_courses{
+    background-color: #1ABC9C;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 /*course*/
 
@@ -606,7 +612,7 @@ div.moduleContent.closeModules{
     .navbar-header img.img-responsive{
         margin-left: 0px;
     }
-    
+
 }
 
 
@@ -628,7 +634,7 @@ div.moduleContent.closeModules{
         margin-right: 36px;
     }
     #myNavbar ul li a {
-        font-size: 22px;
+        font-size: 20px;
         color:#FFFFFF;
         padding: 10px;
         text-transform: uppercase;
