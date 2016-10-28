@@ -592,8 +592,8 @@ p.price span{
     }
     .row.category_link{
         /*    width: 50%;*/
-        width: 36%;
-        margin: 0 auto; 
+/*        width: 36%;
+        margin: 0 auto; */
     }
 }
 @media (max-width: 760px) {
