@@ -4,15 +4,10 @@
  * and open the template in the editor.
  */
 
-
-
-
 $(document).ready(function () {
-
-
-$("#btn-excer").click(function(){
-     window.location.href='code-online.html';
-});
+    $("#btn-excer").click(function () {
+        window.location.href = 'code-online.html';
+    });
     $('.btn_quiz').click(function () {
         $('#question1').show();
         $('#question2').hide();
@@ -29,10 +24,6 @@ $("#btn-excer").click(function(){
     });
 
     $("#tabs_coding").tabs();
-
-    $('.ui-content .lesson_collapse').click(function () {
-        //$('#overlay').attr("data-role", "panel");
-    });
 
     $(".lesson_mobile").click(function () {
         var string = "video/" + $(this).attr("href").substring(1) + ".mp4";
@@ -60,44 +51,7 @@ $("#btn-excer").click(function(){
                 '<style></style><body><p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p><div></div></body>');
     });
 
-
-
-
     $('#next_quiz').click(function () {
         $('#question2').hide();
     });
-
-
-    /*
-     window.onload = function () {
-     if (window.matchMedia('(min-width: 992px)').matches)
-     {
-     $('#overlay').removeAttr('data-role');
-     
-     }else{
-     //$('#overlay').html('<b>dddh<b/>');
-     }
-     
-     };
-     
-     
-     
-     /*
-     $('#showmenu').click(function() {
-     $('.sidebarmenu').show();
-     
-     var hidden = $('.sidebarmenu').data('hidden');
-     $('#showmenu').text(hidden ? 'Hide Menu' : 'Show Menu');
-     if(hidden){
-     $('.sidebarmenu').animate({
-     left: '0px'
-     },500);
-     $('.all_video').hide();
-     } else {
-     $('.sidebarmenu').animate({
-     left: '-500px'
-     },500);$('.all_video').show();}
-     $('.sidebarmenu,.image').data("hidden", !hidden);
-     });
-     */
 });

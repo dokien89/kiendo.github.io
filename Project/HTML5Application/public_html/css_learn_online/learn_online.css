@@ -291,10 +291,7 @@ body {
     margin-bottom: 20px;
     padding-bottom: 50px;
 }
-/*h1, h4 {
-    text-align: center;
-    margin-bottom: 50px;
-}*/
+
 h1 i {
     color: pink;
 }
@@ -302,7 +299,6 @@ h1 i {
 #overlay .panel.with-nav-tabs.panel-default{
     margin-top: -18px;
     margin-left: -15px
-        //margin-right: -63px;
 }
 ul.nav.navbar-nav.navbar-right{
     font-size: 17px;
@@ -360,10 +356,6 @@ table, tr, th, td {
     align-content: center;
     font-size: 16px;
 }
-th{
-
-}
-
 .CodeMirror-scroll {
     -moz-box-sizing: content-box;
     border: 1px solid #adcfd8;
@@ -401,10 +393,6 @@ th{
     font-family: sans-serif;
     width: 120px;
 }
-.footer-left a:hover{
-    /*    color:white;
-        background-color:#3071a9*/
-}
 button#collapse_lessons{
     font-size: 18px;
     line-height: 24px;
@@ -416,7 +404,6 @@ button#collapse_lessons{
 }
 .col-md-6 button.btn-lg:active{
     border: none;
-
 }
 
 #coding .tab-content .code{
@@ -507,9 +494,6 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 953px){
-    .navbar-brand span, #notify-link-icon, form.navbar-form {
-        /*display: none;*/
-    }
     i.fa.fa-search{
         display: inline-block;
         margin-top: 17px;
@@ -521,34 +505,24 @@ footer {
 }
 
 @media screen and (min-width: 992px){
-    /*
-    #lesson_slidebar{
-        //display:none;
-    } 
-    */
     #tbl_ranking{
         width: 550px;
     }
     #account_link > div{
         float: right;
     }
-
-
-
     #lesson_video video{
         width: 98%;
         height: 98%;
     }
-    .row {
-        /*        margin-right: -90px;
-                margin-left: -100px;*/
-    }
     .ui-content{
         display: none;
     }
+    .footer-left {
+        padding-left: 209px;
+    }
 } 
 @media screen and (max-width: 991px){
-
     #theory{
         display: none;
     }
@@ -558,5 +532,4 @@ footer {
     .footer-left a{
         width: 60px;
     }
-
 }

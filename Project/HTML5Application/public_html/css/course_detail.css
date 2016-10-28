@@ -13,7 +13,6 @@ and open the template in the editor.
     list-style-position: inside;
 }
 div.course-description{
-    /*    display: none;*/
     padding: 0px 22px;
 }
 div.modal-body{
@@ -118,7 +117,6 @@ div.courseLesson_rel p{
     color: #1ABC9C;
 }
 
-
 @media screen and (max-width: 767px) {
     .courseIcon1{
         width: 65px;
@@ -152,9 +150,6 @@ div.courseLesson_rel p{
         margin-left: -20px;
         margin-right: -20px;
     }
-    div.col-sm-3.course-relative{
-        /*display: none;*/
-    }
 }
 
 @media screen and (max-width: 1030px) and (min-width: 650px){
@@ -165,7 +160,6 @@ div.courseLesson_rel p{
         width: auto;
     }
     div.col-sm-3.course-relative{
-        /*display: none;*/
         width: 50%;
         margin-top: 10px;
         margin-left: 14px;

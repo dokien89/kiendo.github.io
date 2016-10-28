@@ -10,7 +10,6 @@ $(document).ready(function () {
         $(".nav-pills li").removeClass("active");
         $(this).addClass("active");
     });
-//                    $('#myModal').modal('show');
     $('#element').on('click', function (e) {
         Custombox.open({
             target: '#modal',
@@ -56,18 +55,6 @@ $(document).ready(function () {
         } else{
             $("#tra").hide();
         }
-        
-       
-//        if ($("input[type='radio']:checked").val()=="techmaster") {
-//            $("#tech").show();
-//        } else{
-//            $("#tech").hide();
-//        }
-//        if ($("input[type='radio']:checked").val()=="home") {
-//            $("#hom").show();
-//        } else{
-//            $("#hom").hide();
-//        }
     });
     $("input[name='pay']").on("click", function () {
          if ($("input[name='pay']:checked").val()=="ck") {
@@ -86,23 +73,5 @@ $(document).ready(function () {
             $("#hom").hide();
         }
     });
-    
-    
-    
-//    $("#save, #standard", "#training").change(function () {
-//        if ($("#save").is(":checked")) {
-//            $('#sav').show();
-//        }
-//        else{
-//            $('#sav').hide();
-//        } 
-//            
-//        if ($("#standard").is(":checked")) {
-//            $('#div2').show();
-//        }
-//        else 
-//            $('#div3').show();
-//    });        
-
 });
 
