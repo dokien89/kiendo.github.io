@@ -47,6 +47,10 @@ div.modal-footer.footer_c{
     margin-top: 30px;
 }
 
+#register .panel-heading h4 a:hover{
+    text-decoration: none;
+}
+
 #collapse2 .card-header{
     font-size: 22px;
     color:#337ab7;
