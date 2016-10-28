@@ -278,6 +278,24 @@ nav:hover .forAnimate{
 section{
     padding-left: 15px;
 }
+#mycourse > h3{
+    display: block;
+    margin-bottom:30px;
+}
+#bs-sidebar-navbar-collapse-1 ul li a{
+    font-size: 16px;
+    color: #0000ff;
+    }
+
+#header nav.navbar.navbar-default {
+    background-color: #1ABC9C;
+    border: none;
+    color: #FFFFFF;
+}
+#header .navbar-header a, #bs-example-navbar-collapse-1 a {
+    color: #FFFFFF;
+    font-size: 18px;
+}
 
 @media (min-width: 1200px){
     .courseItem {

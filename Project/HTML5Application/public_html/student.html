@@ -8,7 +8,19 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/student.css" type="text/css">
+        <link rel="stylesheet" href="css_learn_online/font-awesome-4.6.3/css/font-awesome.min.css">
         <script src="js/student_script.js"></script>
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script> 
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>  
+        <!-- x-editable (bootstrap version) -->
+        <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.6/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.6/bootstrap-editable/js/bootstrap-editable.min.js"></script>
+        <!-- main.js -->
+        <script src="js/main.js"></script>
+
+
+        <!-- bootstrap -->
+
         <style>
             /* Remove the navbar's default margin-bottom and rounded borders */
             .navbar {
@@ -36,7 +48,7 @@
                 width: 100%; 
             }
             #record h3{
-                
+
             }
 
             /* On small screens, set height to 'auto' for sidenav and grid */
@@ -51,29 +63,41 @@
     </head>
     <body>
 
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Logo</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div id="header" class="containers">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="trangchu.html">Trang chủ</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
+
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown notifications-menu" data-reactid=".0.0.0.0.2.0.0"><a id="notify-link-icon" href="#" class="dropdown-toggle" data-toggle="dropdown" data-reactid=".0.0.0.0.2.0.0.0"><i class="fa fa-bell-o" data-reactid=".0.0.0.0.2.0.0.0.0"></i><span class="label label-warning" id="notify-number" data-reactid=".0.0.0.0.2.0.0.0.1">34</span></a>
+                                <ul class="dropdown-menu" data-reactid=".0.0.0.0.2.0.0.1">
+                                    <li class="header" data-reactid=".0.0.0.0.2.0.0.1.0">Thông báo</li><li data-reactid=".0.0.0.0.2.0.0.1.1"><div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 400px;"><ul class="menu" id="notify-menu" data-reactid=".0.0.0.0.2.0.0.1.1.0" style="overflow: hidden; width: auto; height: 400px;"></ul><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div></li><li class="footer" data-reactid=".0.0.0.0.2.0.0.1.2"><a href="/user/notify" data-reactid=".0.0.0.0.2.0.0.1.2.0">Xem tất cả</a></li></ul>
+                            </li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Đăng xuất</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
 
         <div class="container-fluid text-center">
             <div class="row content">
@@ -90,7 +114,7 @@
                             </div>
                             <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
-                                    <li id="mycourse_li" class="sidebar_link"><a href="#">Khóa học của tôi<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-book"></span></a></li>
+                                    <li id="mycourse_li" class="sidebar_link"><a href="#">Khóa học của bạn<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-book"></span></a></li>
                                     <li id="report_li"   class="sidebar_link "><a href="#">Thông báo<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-bell"></span></a></li>
                                     <li id="record_li"   class="sidebar_link"><a href="#">Hồ sơ cá nhân<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>        
                                     <li id="cert_li"     class="sidebar_link"><a href="#">Chứng chỉ<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-certificate"></span></a></li>
@@ -116,22 +140,22 @@
                             </div>
                             <div class="col-sm-4 courseItem block noPadding sp">
                                 <a href="/Course/CPlusPlus/">
-                                    <img class="img-responsive courseIcon" src="img/1051.png" alt="C++ Tutorial">
+                                    <img class="img-responsive courseIcon" src="img/1059.png" alt="C++ Tutorial">
                                     <div class="courseDescription">
-                                        <div>C++ Tutorial</div>
+                                        <div>PHP Tutorial</div>
                                         <p>
-                                            Our C++ tutorial covers basic concepts, data types, arrays, pointers, conditional statements, loops, functions, classes, objects, inheritance, and polymorphism.
+                                            PHP enables you to create dynamic web pages, develop websites, and generate dynamic content. Learn the most widely used web programming language!
                                         </p>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-sm-4 courseItem block noPadding sp">
                                 <a href="/Course/CPlusPlus/">
-                                    <img class="img-responsive courseIcon" src="img/1051.png" alt="C++ Tutorial">
+                                    <img class="img-responsive courseIcon" src="img/1073.png" alt="C++ Tutorial">
                                     <div class="courseDescription">
-                                        <div>C++ Tutorial</div>
+                                        <div>Python 3 Tutorial</div>
                                         <p>
-                                            Our C++ tutorial covers basic concepts, data types, arrays, pointers, conditional statements, loops, functions, classes, objects, inheritance, and polymorphism.
+                                            Learn Python, one of today's most in-demand programming languages on-the-go! Practice writing Python code, collect points, &amp; show off your skills now!
                                         </p>
                                     </div>
                                 </a>
@@ -160,7 +184,7 @@
                                 <li class="notification-item">
                                     <div class="clearfix">
                                         <div class="notification-img">
-                                            <img class="noti-img img-responsive" src="/img/users/4072.png">
+                                            <img class="noti-img img-responsive" src="img/NguyenMinhThuc.jpg">
                                         </div>
                                         <div class="notification-text ">
                                             <span class="main-notification">
@@ -176,7 +200,7 @@
                                 <li class="notification-item">
                                     <div class="clearfix">
                                         <div class="notification-img">
-                                            <img class="noti-img" src="/img/users/4072.png">
+                                            <img class="noti-img" src="img/NguyenThanhTrung.jpg">
                                         </div>
                                         <div class="notification-text ">
                                             <span class="main-notification">
@@ -192,7 +216,7 @@
                                 <li class="notification-item">
                                     <div class="clearfix">
                                         <div class="notification-img">
-                                            <img class="noti-img" src="/avatar-gallery/C04.jpg">
+                                            <img class="noti-img" src="img/NguyenThanhTrung.jpg">
                                         </div>
                                         <div class="notification-text ">
                                             <span class="main-notification">
@@ -208,7 +232,7 @@
                                 <li class="notification-item">
                                     <div class="clearfix">
                                         <div class="notification-img">
-                                            <img class="noti-img" src="/img/noImage.png">
+                                            <img class="noti-img" src="img/NguyenThanhTrung.jpg">
                                         </div>
                                         <div class="notification-text ">
                                             <span class="main-notification">
@@ -224,7 +248,7 @@
                                 <li class="notification-item">
                                     <div class="clearfix">
                                         <div class="notification-img">
-                                            <img class="noti-img" src="/img/noImage.png">
+                                            <img class="noti-img" src="img/NguyenThanhTrung.jpg">
                                         </div>
                                         <div class="notification-text ">
                                             <span class="main-notification">
@@ -240,7 +264,7 @@
                                 <li class="notification-item">
                                     <div class="clearfix">
                                         <div class="notification-img">
-                                            <img class="noti-img" src="/img/noImage.png">
+                                            <img class="noti-img" src="img/NguyenThanhTrung.jpg">
                                         </div>
                                         <div class="notification-text ">
                                             <span class="main-notification">
@@ -256,7 +280,7 @@
                                 <li class="notification-item">
                                     <div class="clearfix">
                                         <div class="notification-img">
-                                            <img class="noti-img" src="/img/noImage.png">
+                                            <img class="noti-img" src="img/NguyenThanhTrung.jpg">
                                         </div>
                                         <div class="notification-text ">
                                             <span class="main-notification">
@@ -272,7 +296,7 @@
                                 <li class="notification-item">
                                     <div class="clearfix">
                                         <div class="notification-img">
-                                            <img class="noti-img" src="/img/noImage.png">
+                                            <img class="noti-img" src="img/NguyenThanhTrung.jpg">
                                         </div>
                                         <div class="notification-text ">
                                             <span class="main-notification">
@@ -288,7 +312,7 @@
                                 <li class="notification-item">
                                     <div class="clearfix">
                                         <div class="notification-img">
-                                            <img class="noti-img" src="/img/noImage.png">
+                                            <img class="noti-img" src="img/NguyenThanhTrung.jpg">
                                         </div>
                                         <div class="notification-text ">
                                             <span class="main-notification">
@@ -329,21 +353,24 @@
                                         </label>
                                     </div>
                                     <div class="form-group">
-                                        <label for="name1" class="col-sm-3 control-label">Họ và tên:</label>
+                                        <label for="email1" class="col-sm-3 control-label">Họ và tên</label>
                                         <div class="col-sm-3">
-                                            <input type="email" class="form-control inputstl" id="name1">
+                                            <input type="email" class="form-control inputstl" id="email1" value="Đỗ Văn Kiên">
                                         </div>
+
                                         <div class="col-sm-2">
                                             <label class="btn btn-default btn-file chinhsua">
                                                 Chỉnh sửa <input type="file" style="display: none;">
                                             </label>
                                         </div>
                                     </div>
+
                                     <div class="form-group">
                                         <label for="email1" class="col-sm-3 control-label">Email:</label>
                                         <div class="col-sm-3">
-                                            <input type="email" class="form-control inputstl" id="email1">
+                                            <input type="email" class="form-control inputstl" id="email1" value="dovankien89@gmail.com">
                                         </div>
+
                                         <div class="col-sm-2">
                                             <label class="btn btn-default btn-file chinhsua">
                                                 Chỉnh sửa <input type="file" style="display: none;">
@@ -359,7 +386,7 @@
                                     <div class="form-group">
                                         <label for="address1" class="col-sm-3 control-label">Số điện thoại:</label>
                                         <div class="col-sm-5">
-                                            <input type="email" class="form-control inputstl" id="address1">
+                                            <input type="email" class="form-control inputstl" id="mobile" value="0947247133">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -390,7 +417,7 @@
                         </div>
                         <!--chung chi-->
                         <div class="row" id="cert">
-                            <h3>Chứng chỉ của bạn</h3>
+                            <h3>Chứng chỉ của bạn</h3><br>
                             <div class="col-sm-4">
                                 <img src="img/certi1.jpg">
                             </div>

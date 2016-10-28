@@ -38,6 +38,7 @@ p {
 }
 */
 h3#khnb{
+    font-weight: 700;
     color:#FFFFFF;
     font-size: 25px;
     text-transform: uppercase;
@@ -49,7 +50,8 @@ h3#khnb{
     border-radius: 4px;
 }
 .containers.header-wrapper{
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/bg1.jpg");
+    background-repeat: repeat-x;
     background-color: white;
 }
 .navbar-inverse{
@@ -92,6 +94,7 @@ h3#khnb{
 }
 button.btn.btn-primary.login_modal{
     margin-right: -53px;
+    font-size: 17px;
 }
 
 button.navbar-toggle{
@@ -109,6 +112,9 @@ button.navbar-toggle{
 #login{
     float:right;
     margin-right: 70px;
+}
+#login .col-md-8{
+    font-size: 16px;
 }
 #myCarousel{
     margin-bottom: 25px;
@@ -268,14 +274,19 @@ button.navbar-toggle{
 }
 
 #footer{
-    background-color: #eaedf1;
+    background-color: #3A464B;
     overflow: hidden;
     margin-top: -12px;
     font-size: 16px;
 }
 #footer a{
-    color: black;
+    color:#CCC;
+    text-decoration: none;
 }
+#footer a:hover{
+    color: #1ABC9C;
+}
+
 ul.social-links .facebook{
     background: #3a5795;
     padding-left: 4px;
@@ -302,20 +313,22 @@ ul.social-links i {
     text-align: center;
 }
 #footer h4 {
-    color:#00F;
+    color:#FFFFFF;
     font-size: 18px;
 }
 #footer .container-fluid .row .col-sm-3{
     margin-bottom: 24px;
 }
-
+.login_content .col-sm-10 button{
+    font-size: 14px;
+}
 .carousel-caption h3 {
     font-size: 2.5em;	
-    color:#FF0;
+    color:#00F;
 }
 .carousel-caption > p{
-    font-size: 1.5em;
-    color:#0F0;
+    font-size: 18px;
+    color: #00F;
 } 
 .carousel-caption > a {
     background-color: #1abc9c;
@@ -324,7 +337,7 @@ ul.social-links i {
     color: #fff;
     display: inline-block;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 16px;
     padding: 12px;
     text-align: center;
     text-decoration: none;
@@ -427,6 +440,7 @@ course details
 */ 
 
 .block1{
+    padding-bottom: 10px;
     background-color: #fff;
     padding-left: 15px;
     padding-right: 10px;
@@ -472,8 +486,13 @@ img.courseIcon1 {
     overflow: auto;
 }
 
-
-
+.viewAll{
+    font-size: 19px;
+    text-decoration: none;
+}
+.wrapper a:hover{
+    text-decoration: none;
+}
 div.lessonTitle {
     overflow: hidden;
     margin-bottom: 15px;
@@ -528,6 +547,10 @@ div.moduleContent.closeModules{
     border-radius: 5px;
     margin-bottom: 15px;
 }
+p.price span{
+    color:#1ABC9C;
+    font-weight: bold;
+}
 .courseModule p {
     font-weight: bold;
     color: #3a464b;
@@ -552,7 +575,15 @@ div.moduleContent.closeModules{
     font-weight: 500;
     font-size: 1.4em;
 }
-
+#myNavbar ul.nav a:hover, #myNavbar ul.nav a:focus{
+    background-color: #1ABC9C;
+}
+.link_courses{
+    text-align: center;
+}
+.link_courses .category_link{
+    display: inline-block;
+}
 /* Hide the carousel text when the screen is less than 600 pixels wide */
 @media (min-width: 900px){
     div.col-xs-12.review-item{
@@ -578,7 +609,7 @@ div.moduleContent.closeModules{
     #myNavbar >.nav {
         margin-left: -15px;
         background-color:#1ABC9C;
-        width: 180px;
+        width: 90%;
     }
     .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle {
         background-color: #ddd;
@@ -591,7 +622,7 @@ div.moduleContent.closeModules{
     }
     #myNavbar ul li a {
         color: white;
-        font-size: 22px;
+        font-size: 17px;
         text-transform: capitalize;
     }
 }
@@ -603,20 +634,49 @@ div.moduleContent.closeModules{
         margin-right: auto;
     }
     #myNavbar ul li a {
-        font-size: 1.8em;
+        font-size: 20px;
         color:#FFFFFF;
         padding: 10px;
+        text-transform: uppercase;
         display: inline-block;
         white-space: nowrap;
     }
     .navbar-header img.img-responsive{
         margin-left: 0px;
     }
-
+    #myNavbar ul.dropdown-menu{
+        background-color: #1ABC9C;
+        padding-bottom: 5px;
+    }
+    #myNavbar ul.dropdown-menu li a{
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+    #myNavbar ul.dropdown-menu li a:hover{
+        background: none;
+    }
 }
 
 
 @media (min-width: 1200px){
+    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background-color: #000fff;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+    background: none;
+}
+
+    #myNavbar ul.dropdown-menu{
+        background-color: #1ABC9C;
+        padding-bottom: 5px;
+    }
+    #myNavbar ul.dropdown-menu li a{
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+    #myNavbar ul.dropdown-menu li a:hover{
+        background: none;
+    }
     .carousel-caption{
         margin-bottom: 150px;
         margin-left: -600px;
@@ -643,9 +703,6 @@ div.moduleContent.closeModules{
     }
     .navbar-header img.img-responsive {
         margin-left: 0px;
-    }
-    ul.nav.nav-pills{
-        /*margin-left: 439px;*/
     }
 }
 

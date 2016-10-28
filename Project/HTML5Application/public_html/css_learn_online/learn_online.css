@@ -275,6 +275,9 @@ body {
 #lessons{
     background-color: #FFFFFF;
 }
+.lesson_row{
+    margin-top: 20px;
+}
 #lessons ul li a{
     font-size: 16px;
     color: #000000;
@@ -342,7 +345,11 @@ button#next_quiz{
     color: #FFFFFF;
 }
 div.row.btn-excer{
-
+    margin-top: 15px;
+}
+div.row.btn-excer button{
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 #tbl_ranking{
     /*width: 550px;*/
@@ -455,23 +462,26 @@ footer {
 }
 #account_link{
     float:right;
-
     font-size: 17px;
 }
-.account a.dropdown-toggle{
-    margin-right: 55px;
-}
+
 .dropdown-menu > li > a >i{
     margin-right: 3px;
 } 
-#bs-example-navbar-collapse-1{
-    
+#bs-example-navbar-collapse-1 ul.dropdown-menu{
+    background-color: #1ABC9C;
+}
+#bs-example-navbar-collapse-1 a:hover{
+    background: none;
 }
 .navbar-nav > li > a
 {
     position: relative;
     display: block;
     padding: 10px 14px;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background-color: #000fff;
 }
 
 .navbar .container-fluid{
@@ -517,7 +527,7 @@ footer {
     } 
     */
     #tbl_ranking{
-    width: 550px;
+        width: 550px;
     }
     #account_link > div{
         float: right;

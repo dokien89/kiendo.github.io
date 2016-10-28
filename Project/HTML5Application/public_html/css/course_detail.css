@@ -52,6 +52,10 @@ div.modal-footer.footer_c{
     font-size: 22px;
     color:#337ab7;
 }
+.panel-default>.panel-heading
+{
+    background-color: #1ABC9C;
+}
 div#learn_registration{
     margin-top: 13px;
     margin-bottom: 13px;
@@ -66,9 +70,55 @@ div#learn_registration{
     vertical-align: middle;
     border-radius: 50%;
 }
+.lessonNumber, .courseLessonTitle{
+    font-weight: 500;
+}
+.lessonNumber{
+    display: inline-block;
+    border-right: 2px solid #F0F0F0;
+    padding-right: 5px;
+    line-height: 15px;
+}
 fieldset label{
     font-size: 15px;
 }
+#footer{
+    margin-top: 10px;
+}
+
+div.courseLesson_rel{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5px;
+    padding-top: 8px;
+    text-align: center;
+}
+div.courseLesson_rel a{
+    text-decoration: none;
+}
+
+.course-relative{
+    background-color: white;
+    border-radius: 5px;
+}
+.course-relative h3{
+    margin-top: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 7px;
+}
+div.courseLesson_rel img{
+    width:62px;
+    border-radius: 50%;
+}
+div.courseLesson_rel p{
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1ABC9C;
+}
+
+
 @media screen and (max-width: 767px) {
     .courseIcon1{
         width: 65px;
@@ -103,16 +153,22 @@ fieldset label{
         margin-right: -20px;
     }
     div.col-sm-3.course-relative{
-        display: none;
+        /*display: none;*/
     }
 }
 
 @media screen and (max-width: 1030px) and (min-width: 650px){
     .block1{
-        width: 700px;
+        width: auto;
+    }
+    div.col-sm-9{
+        width: auto;
     }
     div.col-sm-3.course-relative{
-        display: none;
+        /*display: none;*/
+        width: 50%;
+        margin-top: 10px;
+        margin-left: 14px;
     }
 }
 

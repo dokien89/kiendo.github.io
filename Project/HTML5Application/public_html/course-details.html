@@ -37,7 +37,7 @@
                     </span>
                     <span id="login">
                         <button class="btn btn-primary login_modal" data-toggle="modal" data-target="#myModal">
-                            Login modal</button>
+                            Đăng nhập</button>
                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
                              aria-hidden="true">
                             <div class="modal-dialog modal-lg">
@@ -46,18 +46,18 @@
                                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                                             &times;</button>
                                         <h4 class="modal-title" id="myModalLabel">
-                                            Login/Registration </h4>
+                                            Đăng nhập/Đăng ký</h4>
                                     </div>
                                     <div class="modal-body">
                                         <div class="row">
                                             <div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
                                                 <!-- Nav tabs -->
                                                 <ul class="nav nav-tabs">
-                                                    <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
-                                                    <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                                                    <li class="active"><a href="#Login" data-toggle="tab">Đăng nhập</a></li>
+                                                    <li><a href="#Registration" data-toggle="tab">Đăng ký</a></li>
                                                 </ul>
                                                 <!-- Tab panes -->
-                                                <div class="tab-content">
+                                                <div class="tab-content login_content">
                                                     <div class="tab-pane active" id="Login">
                                                         <form role="form" class="form-horizontal">
                                                             <div class="form-group">
@@ -71,7 +71,7 @@
                                                                 <label for="exampleInputPassword1" class="col-sm-2 control-label">
                                                                     Password</label>
                                                                 <div class="col-sm-10">
-                                                                    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email" />
+                                                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
                                                                 </div>
                                                             </div>
                                                             <div class="row">
@@ -170,13 +170,13 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="hoc_online .html"><img class="img-responsive" src="img/logo2.png"></a>
+                        <a href="trangchu.html"><img class="img-responsive" src="img/logo2.png"></a>
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
 
                             <li id="courses">
-                                <a href="/Courses/">khóa học</a>
+                                <a href="all-course.html">khóa học</a>
                             </li>
                             <li id="courses">
                                 <a href="/Courses/">thực tập</a>
@@ -215,12 +215,12 @@
                             <p>Our interactive HTML tutorial is comprised of carefully selected videos, quizzes, and checkpoints to ensure that you learn as much as possible, while also having as much fun as possible. This is accomplished through a series of entertaining exercises, along with plenty of hands-on practice in writing actual HTML code.</p>
                             <p>You will also learn the fundamentals of web design, collect colorful points, and compete with other learners throughout the world.</p>
                             <p>Our videos are informative and concise, our checkpoints are enjoyable, and your learning is guaranteed.
-Learn while playing and play while learning with our HTML Tutorial! Whether you want to further your career or simply gain a new skill, this tutorial will work for you.</p>
+                                Learn while playing and play while learning with our HTML Tutorial! Whether you want to further your career or simply gain a new skill, this tutorial will work for you.</p>
                         </div>
                     </div>
                     <div id="learn_registration">
                         <button type="button" id="btn-register" class="btn btn-success btn-primary btn-lg"
-                                data-toggle="modal">Đăng ký học</button>
+                                data-toggle="modal">Đăng ký học<br/>500,000đ</button>
                     </div>
                     <!--Modal dang ky1-->
                     <div class="modal fade" id="register">
@@ -417,7 +417,7 @@ Learn while playing and play while learning with our HTML Tutorial! Whether you 
                                                                                 <div class="form-group">
                                                                                     <label class="col-md-3 control-label" for="name">Họ và tên</label>
                                                                                     <div class="col-md-9">
-                                                                                        <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                                                                                        <input id="name" name="name" type="text" placeholder="" class="form-control">
                                                                                     </div>
                                                                                 </div>
 
@@ -425,17 +425,17 @@ Learn while playing and play while learning with our HTML Tutorial! Whether you 
                                                                                 <div class="form-group">
                                                                                     <label class="col-md-3 control-label" for="email">Số điện thoại</label>
                                                                                     <div class="col-md-9">
-                                                                                        <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                                                                        <input id="email" name="email" type="text" placeholder="" class="form-control">
                                                                                     </div>
                                                                                 </div>
-                                                                                
+
 
                                                                                 <!-- Message body -->
-                                                                                
+
                                                                                 <div class="form-group">
                                                                                     <label class="col-md-3 control-label" for="email">Địa chỉ</label>
                                                                                     <div class="col-md-9">
-                                                                                        <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                                                                        <input id="email" name="email" type="text" placeholder="" class="form-control">
                                                                                     </div>
                                                                                 </div>
 
@@ -478,10 +478,10 @@ Learn while playing and play while learning with our HTML Tutorial! Whether you 
 
 
                     </div><!-- /.modal -->
-                 
-                    
-                   
-                    
+
+
+
+
 
                     <div class="courseLessons block1">
                         <div class="lessonTitle">
@@ -820,12 +820,31 @@ Learn while playing and play while learning with our HTML Tutorial! Whether you 
                 </div>
 
                 <div class="col-sm-3 course-relative">
-                   <div>
+                    <h3>Các khóa học liên quan</h3>
+                    <div class="courseLesson_rel">
+                        <a href="#">
+                            <img src="img/1023.png"/><p>CSS Fundamentals<br>700,000đ</p>
+                        </a>
+                    </div>
+                    <div class="courseLesson_rel">
+                        <a href="#">
+                            <img src="img/1024.png"/><p>JavaScript Tutorial<br>1,000,000đ</p>
+                        </a>
+                    </div>
+                    <div class="courseLesson_rel">
+                        <a href="#">
+                            <img src="img/1059.png"/><p>PHP Tutorial<br>1,700,000đ</p>
+                        </a>
+                    </div>
+                    <div class="courseLesson_rel">
+                        <a href="#">
+                            <img src="img/nodejs_logo.png"/><p>NodeJs Tutorial<br>1,500,000đ</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <footer id="footer" >
-
             <div class="container-fluid text-center">
                 <div class="row">
                     <div class="col-sm-3">
@@ -868,16 +887,18 @@ Learn while playing and play while learning with our HTML Tutorial! Whether you 
                         <div class="chat-block">
                             <div>
                                 <a href="https://techmaster.vn/trungtam/dia-chi#co-so-1">
-                                    <address> Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</address>
-                                    <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
+                                    <address> Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội<br/>
+                                        <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
+                                    </address>
+
                                 </a>
                             </div>
                             <div>
                                 <a href="https://techmaster.vn/trungtam/dia-chi#co-so-2">
                                     <address> Phòng 2304, tầng 23, toà nhà StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh
-                                        Xuân, Hà Nội
+                                        Xuân, Hà Nội<br>
+                                        <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
                                     </address>
-                                    <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
                                 </a>
                             </div>
                         </div>

@@ -79,7 +79,6 @@ footer {
 
 .tab-content .CodeMirror-scroll{
     height: 450px;
-
     border:  none;
 }
 
@@ -131,7 +130,10 @@ ul.nav-tabs{
 #excersice .panel-body span{
     font-weight: bold;
     font-size: 17px;
-}   
+}  
+#accordion {
+    margin-top: 40px;
+}
 
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
@@ -140,4 +142,9 @@ ul.nav-tabs{
         padding: 15px;
     }
     .row.content {height: auto;}
+}
+@media screen and (min-width: 767px){
+    .code_area, #result_code{
+        margin-top: -26px;
+    }
 }
