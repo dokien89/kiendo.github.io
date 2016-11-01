@@ -202,16 +202,26 @@ ul.list-notification {
     font-size: 15px;
 }
 /*new end*/
-
+#save.btn.btn-lg{
+    padding: 10px 13px;
+}
 @media screen and (max-width: 767px) {
     .sidenav {
         height: auto;
         padding: 15px;
     }
     .row.content {height:auto;}
+    .chinhsua {
+    margin-top: 5px;
+    font-size: 15px;
+    margin-left: -15px;
+}
+#save{
+    margin-left: 0px;
+}
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
 
     .main{
         position: absolute;
@@ -283,6 +293,9 @@ ul.list-notification {
 
     .forAnimate{
         opacity: 0;
+    }
+    #save{
+    width:80%;
     }
 }
 
