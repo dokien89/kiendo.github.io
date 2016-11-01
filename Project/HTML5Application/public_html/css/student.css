@@ -333,6 +333,11 @@ section{
     font-size: 18px;
 }
 
+#edit_email .form-group, #edit_fullname .form-group{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 @media (min-width: 1200px){
     .courseItem {
         width: 29%;
