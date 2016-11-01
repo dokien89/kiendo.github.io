@@ -212,13 +212,13 @@ ul.list-notification {
     }
     .row.content {height:auto;}
     .chinhsua {
-    margin-top: 5px;
-    font-size: 15px;
-    margin-left: -15px;
-}
-#save{
-    margin-left: 0px;
-}
+        margin-top: 5px;
+        font-size: 15px;
+        margin-left: -15px;
+    }
+    #save{
+        margin-left: 0px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -295,7 +295,7 @@ ul.list-notification {
         opacity: 0;
     }
     #save{
-    width:80%;
+        width:80%;
     }
 }
 
